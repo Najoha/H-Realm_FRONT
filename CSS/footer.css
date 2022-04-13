@@ -1,0 +1,21 @@
+.globalcontenairbis {
+  width: 100%;
+  background-color: black;
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+
+.contact {
+  margin-left: 2%;
+  color: white;
+  font-family: "Courier";
+  display: inline-block;
+  font-size: 30px;
+}
+
+.logo {
+  margin-left: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  object-fit: cover;
+}
