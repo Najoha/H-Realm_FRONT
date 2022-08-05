@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>H-Realm</title>
+    <link href="../CSS/register.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/header.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/footer.css" rel="stylesheet" type="text/css"/>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+
+<body>
+    <header>
+        <div class="globalblock"> 
+           
+          <div class="block1">
+            <a href="../HTML/register.html" class="identifier">Rejoignez-nous</a>
+            <a href="../HTML/login.html" class="identifier2">S'identifier</a>
+            </div>
+           
+            <div class="block2">
+              <img src='../image/logo.png'>
+           
+              <div class="text">
+    
+                <a href="" class="text">Horror Story</a>
+                <a href="../HTML/home.html" class="text">Home</a>
+                <a href="" class="text">Entertain Section</a>
+                <a href="" class="text">Item 4</a>
+    
+            
+              </div>
+            </div>
+    
+        </div>
+        </header>
+
+            <div class="contenairglobal">
+                <div class="imageleft">
+                    <img src="../image/162376.png" class="imageleft">
+                </div>
+                <div class="contenairregister">
+                    <h1>H-Realm</h1>
+                    <div id="app">
+                     <h2>Bienvenue {{nom}}!</h2>
+                    <div class="form">
+                        <form>
+                            <input type="text" placeholder='Nom' class="name" id='name' required><br>
+                            <input type="text" placeholder='Prénom' class="lastname" id='firstname' required><br>
+                            <input type="text" placeholder='Pseudo' class="username" id='username'  v-model="nom" required><br>
+                            <input type="password" placeholder='Mot de passe' class='password' required><br>
+                            <input type="password" placeholder='Confirmez mot de passe' class='confirmpassword' required><br>
+                        </form>
+                      
+                        <a href="" class="signup">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              </div>     
+           
+        <footer>
+          <div class="globalcontenairbis">
+           
+            <a class="contact">Contact</a>
+          <div class="logo">
+            <a href=""><img src="../image/facebook.png"></a>
+            <a href=""><img src="../image/twitter.png"></a>
+              <a href=""><img src="../image/instagram.png"></a>
+                <a href=""><img src="../image/youtube.png"></a>
+      
+          </div>
+          
+        </div>           
+      </footer>
+   
+            
+</body>
+<script>
+  app = Vue.createApp({
+    data() {
+      return {
+        nom: "",
+      };
+    },
+  });
+  app.mount("#app");
+</script>
+</html>

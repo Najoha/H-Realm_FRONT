@@ -1,0 +1,223 @@
+h1 {
+  font-family: Assistant, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Courier New", monospace;
+  margin-top: 8%;
+}
+
+h3 {
+  font-family: "Courier New", monospace;
+  text-align: left;
+  margin-left: 1%;
+}
+
+h5 {
+  font-size: 1.17em;
+  margin-top: -3%;
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-left: 8vw;
+}
+
+a {
+  text-decoration: none;
+}
+.contenairlogin {
+  position: relative;
+  z-index: 1000;
+  background: #8a2323;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6%;
+  width: 40%;
+  padding-top: 2%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.3),
+    0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.form {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1em;
+}
+
+.username {
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px black;
+  width: 40%;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  outline: none;
+}
+
+.password {
+  margin-top: 3%;
+  border: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px black;
+  width: 40%;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  outline: none;
+}
+
+.logg {
+  border-radius: 3px;
+  padding: 5px 2em;
+  box-shadow: 0px 0px 0px 2px black;
+  text-decoration: none;
+  margin-right: 13%;
+  color: black;
+}
+
+.forgot {
+  text-decoration: none;
+  color: black;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 0.5;
+}
+
+.register {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 1%;
+  margin-top: 30%;
+  border-radius: 0px 0px 8px 8px;
+  background: #7e1f1f;
+}
+
+.createaccount {
+  font-size: 1.17em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  margin-top: 3%;
+  margin-left: 1%;
+}
+
+/*SLIDER AUTO */
+
+section .contenthome {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+}
+
+section .contenthome h1 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+}
+
+section .contenthome h2 {
+  text-align: center;
+  font-size: 35px;
+  color: #8a2be2;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+}
+
+section .contenthome p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+}
+
+.footer h1 {
+  color: white;
+  font-size: 15px;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  font-style: bold;
+}
+
+.footer p {
+  color: #8a2be2;
+  font-size: 15px;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  font-style: bold;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5%;
+  margin-left: 2%;
+}
+
+.home img {
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.slider-navigation {
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  margin-top: -45px;
+}
+
+.slider-navigation .nav-btn {
+  background-color: #8a2323;
+  width: 10%;
+  height: 8px;
+  border-radius: 40%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  transition: 0, 3s ease;
+}
+
+.slider-navigation .nav-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover {
+  transform: scale(1.2);
+}
+
+.slider-navigation .nav-btn.active {
+  background-color: #8a2323;
+  width: 3%;
+  border-radius: 40%;
+  height: 8px;
+}
+
+.image-slide {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.image-slide.active {
+  clip-path: circle(150% at 0 50%);
+}

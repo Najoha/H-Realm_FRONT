@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>H-Realm</title>
+    <link href="../CSS/login.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/header.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/footer.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="globalblock">
+        <div class="block1">
+          <a href="../HTML/register.html" class="identifier">Rejoignez-nous</a>
+          <a href="../HTML/login.html" class="identifier2">S'identifier</a>
+        </div>
+
+        <div class="block2">
+          <img src="../image/logo.png" />
+
+          <div class="text">
+            <a href="" class="text">Horror Story</a>
+            <a href="../HTML/home.html" class="text">Home</a>
+            <a href="" class="text">Entertain Section</a>
+            <a href="" class="text">Item 4</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="contenairlogin">
+        <h1>H-Realm</h1>
+        <div id="app">
+          <div id="app">
+            <h2>Bienvenue {{nom}} !</h2>
+          </div>
+          <div class="form">
+            <form>
+              <input
+                type="text"
+                placeholder="Username"
+                v-model="nom"
+                class="username"
+                id="username"
+                required
+              />
+              <br />
+
+              <input
+                type="password"
+                placeholder="••••••••••••••"
+                class="password"
+              /><br /><br />
+              <a href="" class="logg" type="submit" value="login">Login</a>
+              <a href="../HTML/reset.html" class="forgot">Forgot?</a>
+            </form>
+          </div>
+        </div>
+        <div class="register">
+          <p class="createaccount">
+            Devenez membre! <a href="../HTML/register.html">Créer un compte</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    app = Vue.createApp({
+      data() {
+        return {
+          nom: "",
+        };
+      },
+    });
+    app.mount("#app");
+  </script>
+</html>
